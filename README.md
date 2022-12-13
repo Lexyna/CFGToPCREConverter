@@ -30,7 +30,11 @@ S > 'a'B | A
 S -> B | 'a'
 
 S > A | B | A B 'abc'
+
+S => A |
 ```
+
+if the production rule contains epsilon, create a seperator followed by the end line character, like in the last example.
 
 # Example
 
