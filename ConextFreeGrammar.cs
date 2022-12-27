@@ -7,7 +7,7 @@ using System.IO;
 class ContextFreeGrammar
 {
 
-  static Regex grammar = new Regex("(?<Symbol>[A-Z][A-Z0-9]*)\\s*[-=]?>(?<rule>\\s*'(?<terminal>[a-z][a-z0-9]*)'\\|?|\\s*(?<nonterminal>[A-Z][A-Z]*)\\s*\\|?)*$");
+  static Regex grammar = new Regex("(?<Symbol>[A-Z][A-Z0-9]*)\\s*[-=]?>(?<rule>\\s*'(?<terminal>[a-z][a-z0-9]*)'\\s*\\|?|\\s*(?<nonterminal>[A-Z][A-Z]*)\\s*\\|?)*$");
 
   private List<NonTerminal> nonTerminals = new List<NonTerminal>();
 
