@@ -4,7 +4,7 @@ This tool reads a .txt file containg the definition of any contex free grammar a
 
 To compile the program, run the following command in the root folder
 ```
-csc Program.cs ConextFreeGrammar.cs NonTerminal.cs Production.cs Word.cs 
+csc src\*
 ```
 
 To run the program, enter the following command in the directory containing the `Program.exe`
