@@ -1,4 +1,4 @@
-# CFTToPCREConverter
+# CFGToPCREConverter
 
 This tool reads a .txt file containing the definition of any context free grammar and will return a PCRE compatible string that can detect the given grammar.
 
