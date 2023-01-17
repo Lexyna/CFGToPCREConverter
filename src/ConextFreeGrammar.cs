@@ -256,6 +256,8 @@ class ContextFreeGrammar
 
             Match match = grammar.Match(grammarDefinition[i]);
 
+            if (!match.Success) throw new Exception(String.Format("Couldn't read grammar definition in line {0}: {1}", (i + 1), grammarDefinition[i]));
+
             CaptureCollection words = match.Groups["rule"].Captures;
 
             string symbol = match.Groups["Symbol"].Value;
